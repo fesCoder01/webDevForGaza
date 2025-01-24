@@ -1,0 +1,198 @@
+/* بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ */
+
+/* Setting the text styling for each section */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-logo {
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+.primary {
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+}
+
+.secondary,
+.newsletter,
+.call-to-action,
+.footer,
+a {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 18px;
+    color: #f9faf8;
+}
+
+.call-to-action {
+    font-weight: bold;
+}
+
+.information {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+    text-align: center;
+}
+
+.quote-text {
+    text-align: justify;
+
+    font-size: 24px;
+    font-weight: lighter;
+    color: #1f2937;
+}
+
+.attribution {
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+}
+
+/* Setting the background styling for each section */
+
+.hero,
+.footer {
+    background-color: #1f2937;
+}
+
+.quote {
+    background-color: #e5e7eb;
+}
+
+.signup {
+    background-color: #3882f6;
+}
+
+button {
+    background-color: #3882f6;
+    color: white;
+    border: 3px solid white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Setting the <ul> and <a> styling */
+ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    padding-bottom: 30px;
+    margin: 0;
+    gap: 3%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Setting the grouping of each section */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    padding: 2% 10%;
+    gap: 10px 
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-hero {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+.main-hero > div {
+    flex: 1; /* This ensures the text area takes up equal space */
+}
+
+.main-hero .hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-text button {
+    align-self: flex-start;
+}
+
+.main-hero img {
+    flex: 1 0 0;
+    width: 100%;
+    height: auto; /* Make sure the image stretches to fill the container */
+    display: block;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.slider-cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    gap: 10px;
+}
+
+.slider-cards .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    text-align: center;
+}
+
+.slider-cards img {
+    width: 70%;
+    height: auto;
+    margin-bottom: 3%;
+    border-radius: 4px;
+    border: 2px solid #3882f6;
+}
+
+.quote {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 25%;
+}
+
+.quote-text {
+    padding-bottom: 5%;
+}
+
+.signup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    padding: 2% 5%;
+    margin: 2% 25%;
+}
+
+.footer {
+    padding: 2% 0%;
+}
