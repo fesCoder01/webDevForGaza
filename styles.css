@@ -179,7 +179,7 @@ a {
     display: flex;
     justify-content: end;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     padding: 5% 25%;
 }
 
