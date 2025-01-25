@@ -19,10 +19,15 @@ body {
 .secondary,
 .newsletter,
 .call-to-action,
-.footer,
-a {
+.footer{
     text-align: justify;
     text-justify: inter-word;
+    font-size: 18px;
+    color: #f9faf8;
+}
+
+a
+{
     font-size: 18px;
     color: #f9faf8;
 }
@@ -40,7 +45,6 @@ a {
 
 .quote-text {
     text-align: justify;
-
     font-size: 24px;
     font-weight: lighter;
     color: #1f2937;
