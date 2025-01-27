@@ -14,4 +14,4 @@ Just before publishing the page live with GitHub Pages. I thought maybe it is be
 
 While thinking of something worth sharing, I heard the news about the ceasefire in Gaza. And I said, well, let's make it a fundraising page for these people.
 
-And this is how *WebDev For Gaza* came to life. ([This is me right now!](https://media.npr.org/assets/img/2023/05/26/honest-work-meme-c7034f8bd7b11467e1bfbe14b87a5f6a14a5274b.jpg))
+And this is how [*WebDev For Gaza*](https://fescoder01.github.io/webDevForGaza/) came to life. ([This is me right now!](https://media.npr.org/assets/img/2023/05/26/honest-work-meme-c7034f8bd7b11467e1bfbe14b87a5f6a14a5274b.jpg))
