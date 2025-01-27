@@ -1,4 +1,4 @@
-/* بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ */
+/* بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ */
 
 /* Setting the text styling for each section */
 body {
@@ -6,29 +6,31 @@ body {
 }
 
 .header-logo {
-    font-size: 24px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
     color: #f9faf8;
 }
 
 .primary {
-    font-size: 48px;
-    font-weight: 900;
+    font-size: 1.5rem;
+    font-weight: bold;
     color: #f9faf8;
 }
 
 .secondary,
-.newsletter,
+.call-to-action-text,
 .call-to-action,
-.footer{
+.footer,
+.quote-text {
     text-align: justify;
-    text-justify: inter-word;
-    font-size: 18px;
+    font-size: 1rem;
     color: #f9faf8;
 }
 
-a
-{
-    font-size: 18px;
+a {
+    font-size: 0.85rem;
+    font-weight: bold;
     color: #f9faf8;
 }
 
@@ -37,22 +39,27 @@ a
 }
 
 .information {
-    font-size: 36px;
-    font-weight: 900;
+    font-size: 1.75rem;
+    font-weight: bold;
     color: #1f2937;
     text-align: center;
 }
 
+.info div {
+    text-align: center;
+}
+
 .quote-text {
-    text-align: justify;
-    font-size: 24px;
-    font-weight: lighter;
     color: #1f2937;
 }
 
 .attribution {
     text-align: right;
-    font-size: 18px;
+    font-size: 0.65rem;
+    font-weight: bold;
+}
+
+button {
     font-weight: bold;
 }
 
@@ -79,10 +86,9 @@ button {
     background-color: #3882f6;
     color: white;
     border: 3px solid white;
-    padding: 10px 20px;
+    padding: 1.1vh 2vw;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px;
 }
 
 /* Setting the <ul> and <a> styling */
@@ -105,7 +111,6 @@ a {
     display: flex;
     flex-direction: column;
     padding: 2% 10%;
-    gap: 10px 
 }
 
 .header {
@@ -116,11 +121,12 @@ a {
 .main-hero {
     display: flex;
     flex-wrap: wrap;
-    gap: 5%;
+    column-gap: 5%;
 }
 
-.main-hero > div {
-    flex: 1; /* This ensures the text area takes up equal space */
+.main-hero>div {
+    flex: 1;
+    /* This ensures the text area takes up equal space */
 }
 
 .main-hero .hero-text {
@@ -136,7 +142,8 @@ a {
 .main-hero img {
     flex: 1 0 0;
     width: 100%;
-    height: auto; /* Make sure the image stretches to fill the container */
+    height: auto;
+    /* Make sure the image stretches to fill the container */
     display: block;
 }
 
@@ -144,31 +151,26 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    padding-top: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
+    gap: 2vh;
+    padding: 5% 15%;
 }
 
 .slider-cards {
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding-top: 10px;
-    padding-bottom: 30px;
-    gap: 10px;
+    gap: 3.5%;
 }
 
 .slider-cards .info {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1;
+    flex: 0 0 23.125%;
     text-align: center;
 }
 
 .slider-cards img {
-    width: 70%;
+    max-width: 40%;
     height: auto;
     margin-bottom: 3%;
     border-radius: 4px;
@@ -199,4 +201,40 @@ a {
 
 .footer {
     padding: 2% 0%;
+}
+
+/* Adding more responsive design via Media Queries */
+@media (max-width: 481px) {
+    .main-hero {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        gap: 1vh;
+    }
+
+    .main-hero .hero-text {
+        row-gap: 1vh;
+    }
+
+    .slider-cards {
+        flex-wrap: wrap;
+    }
+
+    .slider-cards .info {
+        flex: 0 0 48.25%;
+    }
+
+    .quote {
+        padding: 2% 10%;
+    }
+
+    .signup {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        border-radius: 8px;
+        padding: 2% 5%;
+        margin: 2% 10%;
+    }
 }
